@@ -221,6 +221,14 @@ main {
   border-color: var(--slytherin-secondary);
 }
 
+.book-card--azkaban {
+  border-color: #7a6aba;
+}
+
+.book-card--azkaban .book-cover {
+  background: #06041a;
+}
+
 .book-cover {
   background: #0a0a12;
   padding: 1.5rem;
