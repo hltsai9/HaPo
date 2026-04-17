@@ -15,7 +15,11 @@ All character "pictures" are inline SVG avatars — no external image files need
 
 Just open `index.html` in any browser. Everything is client-side.
 
-## Deploying to GitHub Pages
+## Deploying to GitHub Pages (automatic)
+
+This repo ships with a GitHub Actions workflow at
+`.github/workflows/deploy.yml` that deploys the site to GitHub Pages
+every time you push to `main`.
 
 1. Create a new GitHub repository (for example, `harry-potter-book1`).
 2. Put every file from this folder in the repo's root and push:
@@ -30,13 +34,13 @@ Just open `index.html` in any browser. Everything is client-side.
    ```
 
 3. In your repo on GitHub, go to **Settings → Pages**.
-4. Under **Build and deployment**, set:
-   - Source: **Deploy from a branch**
-   - Branch: **main** / **(root)**
-5. Save. After a minute, your site will be live at
-   `https://<your-username>.github.io/<your-repo>/`.
+4. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+   (No branch to pick — the workflow handles it.)
+5. Open the **Actions** tab. You'll see the *Deploy to GitHub Pages*
+   workflow running. When it finishes (about a minute), your site is
+   live at `https://<your-username>.github.io/<your-repo>/`.
 
-That's it — no build step, no dependencies.
+From then on, any `git push` to `main` re-deploys automatically.
 
 ## Notes
 
