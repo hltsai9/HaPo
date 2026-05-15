@@ -25,6 +25,91 @@ body {
   color: var(--text);
   min-height: 100vh;
   line-height: 1.6;
+  padding-left: 240px;
+}
+
+/* ===== Sidebar nav ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background: #07070f;
+  border-right: 1px solid rgba(212, 175, 55, 0.18);
+  padding: 1.5rem 1rem;
+  overflow-y: auto;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.sidebar-title {
+  font-size: 1.1rem;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.06em;
+  font-weight: normal;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.sidebar-title a { color: inherit; }
+.sidebar-title a:hover { text-decoration: none; opacity: 0.8; }
+
+.nav-grouped {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.nav-grouped a {
+  display: block;
+  padding: 0.4rem 0.7rem;
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+  border-left: 3px solid transparent;
+}
+
+.nav-grouped a:hover {
+  background: rgba(212, 175, 55, 0.08);
+  text-decoration: none;
+}
+
+.nav-grouped a.active {
+  background: rgba(212, 175, 55, 0.16);
+  color: var(--accent);
+  border-left-color: var(--accent);
+}
+
+.nav-home {
+  font-size: 0.95rem !important;
+  text-align: center;
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.nav-book h3 {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: normal;
+  margin-bottom: 0.4rem;
+  padding: 0 0.5rem 0.3rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+@media (max-width: 800px) {
+  body { padding-left: 0; }
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+  }
 }
 
 a { color: var(--accent); text-decoration: none; }
@@ -51,31 +136,10 @@ a:hover { text-decoration: underline; }
   font-style: italic;
 }
 
-nav {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav a {
-  font-size: 1.1rem;
-  padding: 0.4rem 1rem;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-}
-
-nav a:hover {
-  border-color: var(--accent);
-  text-decoration: none;
-  background: rgba(212, 175, 55, 0.08);
-}
-
-nav a.active {
-  border-color: var(--accent);
-  background: rgba(212, 175, 55, 0.12);
+/* Old top-bar nav styles — kept as fallback only.
+   The current site uses .sidebar / .nav-grouped instead. */
+.site-header > nav {
+  display: none;
 }
 
 /* ===== Main ===== */
@@ -227,6 +291,14 @@ main {
 
 .book-card--azkaban .book-cover {
   background: #06041a;
+}
+
+.book-card--goblet {
+  border-color: var(--accent);
+}
+
+.book-card--goblet .book-cover {
+  background: #1a0805;
 }
 
 .book-cover {

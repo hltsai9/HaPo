@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harry Potter Book 1 — Quiz</title>
+  <title>Harry Potter Book 4 — Quiz</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
       <a href="index.html" class="nav-home">Home</a>
       <div class="nav-book"><h3>Book 1: Philosopher's Stone</h3>
         <a href="book1.html">Characters</a>
-        <a href="quiz.html" class="active">Quiz</a>
+        <a href="quiz.html">Quiz</a>
         <a href="book1-chapters.html">Chapters</a>
       </div>
       <div class="nav-book"><h3>Book 2: Chamber of Secrets</h3>
@@ -28,15 +28,15 @@
       </div>
       <div class="nav-book"><h3>Book 4: Goblet of Fire</h3>
         <a href="book4.html">Characters</a>
-        <a href="book4-quiz.html">Quiz</a>
+        <a href="book4-quiz.html" class="active">Quiz</a>
         <a href="book4-chapters.html">Chapters</a>
       </div>
     </nav>
   </aside>
 
   <header class="site-header">
-    <h1>The Philosopher's Stone Quiz</h1>
-    <p>How well do you remember Book 1?</p>
+    <h1>The Goblet of Fire Quiz</h1>
+    <p>How well do you remember Book 4?</p>
   </header>
 
   <main>
@@ -45,16 +45,15 @@
         Question <span id="current-q">1</span> of <span id="total-q">18</span>
         <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="progress-fill"></div></div>
       </div>
-
       <div id="quiz-area"></div>
     </div>
   </main>
 
   <footer>
-    <p>Book chapters based on <em>Harry Potter and the Philosopher's Stone</em> by J.K. Rowling.</p>
-    <p>Get one wrong? Revisit the chapter noted in the feedback — the answer will be there waiting for you.</p>
+    <p>Book chapters based on <em>Harry Potter and the Goblet of Fire</em> by J.K. Rowling.</p>
+    <p>Get one wrong? Revisit the chapter noted in the feedback.</p>
   </footer>
 
-  <script src="quiz.js"></script>
+  <script src="book4-quiz.js"></script>
 </body>
 </html>

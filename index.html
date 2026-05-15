@@ -7,21 +7,36 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <aside class="sidebar">
+    <h1 class="sidebar-title"><a href="index.html">Hogwarts Study Guide</a></h1>
+    <nav class="nav-grouped">
+      <a href="index.html" class="nav-home active">Home</a>
+      <div class="nav-book"><h3>Book 1: Philosopher's Stone</h3>
+        <a href="book1.html">Characters</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="book1-chapters.html">Chapters</a>
+      </div>
+      <div class="nav-book"><h3>Book 2: Chamber of Secrets</h3>
+        <a href="book2.html">Characters</a>
+        <a href="book2-quiz.html">Quiz</a>
+        <a href="book2-chapters.html">Chapters</a>
+      </div>
+      <div class="nav-book"><h3>Book 3: Prisoner of Azkaban</h3>
+        <a href="book3.html">Characters</a>
+        <a href="book3-quiz.html">Quiz</a>
+        <a href="book3-chapters.html">Chapters</a>
+      </div>
+      <div class="nav-book"><h3>Book 4: Goblet of Fire</h3>
+        <a href="book4.html">Characters</a>
+        <a href="book4-quiz.html">Quiz</a>
+        <a href="book4-chapters.html">Chapters</a>
+      </div>
+    </nav>
+  </aside>
+
   <header class="site-header">
     <h1>The Hogwarts Study Guide</h1>
     <p>Character guides &amp; chapter-by-chapter quizzes for the Harry Potter series</p>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="book1.html">Book 1: Characters</a>
-      <a href="quiz.html">Book 1: Quiz</a>
-      <a href="book1-chapters.html">Book 1: Chapters</a>
-      <a href="book2.html">Book 2: Characters</a>
-      <a href="book2-quiz.html">Book 2: Quiz</a>
-      <a href="book2-chapters.html">Book 2: Chapters</a>
-      <a href="book3.html">Book 3: Characters</a>
-      <a href="book3-quiz.html">Book 3: Quiz</a>
-      <a href="book3-chapters.html">Book 3: Chapters</a>
-    </nav>
   </header>
 
   <main>
@@ -226,6 +241,67 @@
           <div class="book-actions">
             <a class="book-link" href="book3.html">Meet the Characters →</a>
             <a class="book-link book-link--alt" href="book3-quiz.html">Take the Quiz →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- BOOK 4 CARD -->
+      <article class="book-card book-card--goblet">
+        <div class="book-cover">
+          <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" aria-label="Book 4 cover">
+            <defs>
+              <linearGradient id="b4bg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#5a1a05"/>
+                <stop offset="100%" stop-color="#1a0805"/>
+              </linearGradient>
+              <radialGradient id="b4flame" cx="50%" cy="40%" r="50%">
+                <stop offset="0%" stop-color="#fffec0"/>
+                <stop offset="50%" stop-color="#88c8ff"/>
+                <stop offset="100%" stop-color="#1a3a8a"/>
+              </radialGradient>
+            </defs>
+            <rect x="4" y="4" width="192" height="272" fill="url(#b4bg)" stroke="#d4af37" stroke-width="2" rx="6"/>
+            <!-- title band -->
+            <rect x="14" y="20" width="172" height="54" fill="none" stroke="#d4af37" stroke-width="1" rx="3"/>
+            <text x="100" y="42" text-anchor="middle" fill="#d4af37" font-family="Palatino,serif" font-size="14" font-style="italic">Book Four</text>
+            <text x="100" y="62" text-anchor="middle" fill="#f4f1e8" font-family="Palatino,serif" font-size="11">The Goblet of Fire</text>
+            <!-- decorative stars -->
+            <g fill="#d4af37" opacity="0.7">
+              <path d="M30 100 l1.5 3.5 l3.5 0 l-3 2.5 l1.5 3.5 l-3.5 -2 l-3.5 2 l1.5 -3.5 l-3 -2.5 l3.5 0 z"/>
+              <path d="M170 110 l2 5 l5 0 l-4 3 l2 5 l-5 -3 l-5 3 l2 -5 l-4 -3 l5 0 z"/>
+              <path d="M25 220 l1.5 3.5 l3.5 0 l-3 2.5 l1.5 3.5 l-3.5 -2 l-3.5 2 l1.5 -3.5 l-3 -2.5 l3.5 0 z"/>
+              <path d="M172 215 l2 5 l5 0 l-4 3 l2 5 l-5 -3 l-5 3 l2 -5 l-4 -3 l5 0 z"/>
+            </g>
+            <!-- Goblet of Fire -->
+            <g transform="translate(100 175)">
+              <!-- big blue flame rising -->
+              <path d="M-30 -10 Q-25 -50 -10 -85 Q0 -100 10 -85 Q25 -50 30 -10 Q15 -25 0 -30 Q-15 -25 -30 -10 Z" fill="url(#b4flame)"/>
+              <path d="M-22 -15 Q-15 -45 -5 -65 Q0 -75 5 -65 Q15 -45 22 -15 Q10 -28 0 -32 Q-10 -28 -22 -15 Z" fill="#aaddff" opacity="0.7"/>
+              <path d="M-10 -25 Q-5 -45 0 -55 Q5 -45 10 -25" fill="#fff" opacity="0.9"/>
+              <!-- goblet bowl -->
+              <path d="M-32 -8 L32 -8 Q28 24 0 24 Q-28 24 -32 -8 Z" fill="#3a2410" stroke="#1a0a05" stroke-width="1"/>
+              <ellipse cx="0" cy="-8" rx="32" ry="4" fill="#5a3a1a"/>
+              <!-- stem -->
+              <rect x="-6" y="24" width="12" height="14" fill="#3a2410"/>
+              <!-- base -->
+              <rect x="-22" y="38" width="44" height="10" fill="#3a2410" rx="2"/>
+              <!-- floating slip of paper (Harry's name) -->
+              <rect x="35" y="-50" width="14" height="18" fill="#f4e8c8" stroke="#8a6a3a" stroke-width="0.5" transform="rotate(20 42 -41)"/>
+            </g>
+            <!-- triangle/Triwizard hint at bottom -->
+            <path d="M70 245 L100 260 L130 245 L100 230 Z" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="book-body">
+          <h2>Harry Potter &amp; the Goblet of Fire</h2>
+          <p>
+            The Quidditch World Cup, the Triwizard Tournament, foreign schools,
+            a Yule Ball, three impossible tasks — and at the end of it, Lord
+            Voldemort returned. Meet the cast of Book 4.
+          </p>
+          <div class="book-actions">
+            <a class="book-link" href="book4.html">Meet the Characters →</a>
+            <a class="book-link book-link--alt" href="book4-quiz.html">Take the Quiz →</a>
           </div>
         </div>
       </article>
