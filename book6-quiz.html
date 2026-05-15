@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harry Potter Book 1 — Quiz</title>
+  <title>Harry Potter Book 6 — Quiz</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,7 +12,7 @@
     <nav class="nav-grouped">
       <a href="index.html" class="nav-home">Home</a>
       <div class="nav-book"><h3>Book 1: Philosopher's Stone</h3>
-        <a href="book1.html">Characters</a><a href="quiz.html" class="active">Quiz</a><a href="book1-chapters.html">Chapters</a></div>
+        <a href="book1.html">Characters</a><a href="quiz.html">Quiz</a><a href="book1-chapters.html">Chapters</a></div>
       <div class="nav-book"><h3>Book 2: Chamber of Secrets</h3>
         <a href="book2.html">Characters</a><a href="book2-quiz.html">Quiz</a><a href="book2-chapters.html">Chapters</a></div>
       <div class="nav-book"><h3>Book 3: Prisoner of Azkaban</h3>
@@ -22,15 +22,15 @@
       <div class="nav-book"><h3>Book 5: Order of the Phoenix</h3>
         <a href="book5.html">Characters</a><a href="book5-quiz.html">Quiz</a><a href="book5-chapters.html">Chapters</a></div>
       <div class="nav-book"><h3>Book 6: Half-Blood Prince</h3>
-        <a href="book6.html">Characters</a><a href="book6-quiz.html">Quiz</a><a href="book6-chapters.html">Chapters</a></div>
+        <a href="book6.html">Characters</a><a href="book6-quiz.html" class="active">Quiz</a><a href="book6-chapters.html">Chapters</a></div>
       <div class="nav-book"><h3>Book 7: Deathly Hallows</h3>
         <a href="book7.html">Characters</a><a href="book7-quiz.html">Quiz</a><a href="book7-chapters.html">Chapters</a></div>
     </nav>
   </aside>
 
   <header class="site-header">
-    <h1>The Philosopher's Stone Quiz</h1>
-    <p>How well do you remember Book 1?</p>
+    <h1>The Half-Blood Prince Quiz</h1>
+    <p>How well do you remember Book 6?</p>
   </header>
 
   <main>
@@ -39,16 +39,11 @@
         Question <span id="current-q">1</span> of <span id="total-q">18</span>
         <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="progress-fill"></div></div>
       </div>
-
       <div id="quiz-area"></div>
     </div>
   </main>
 
-  <footer>
-    <p>Book chapters based on <em>Harry Potter and the Philosopher's Stone</em> by J.K. Rowling.</p>
-    <p>Get one wrong? Revisit the chapter noted in the feedback — the answer will be there waiting for you.</p>
-  </footer>
-
-  <script src="quiz.js"></script>
+  <footer><p>Get one wrong? Revisit the chapter noted in the feedback.</p></footer>
+  <script src="book6-quiz.js"></script>
 </body>
 </html>

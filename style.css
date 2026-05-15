@@ -301,6 +301,15 @@ main {
   background: #1a0805;
 }
 
+.book-card--phoenix { border-color: #c2410c; }
+.book-card--phoenix .book-cover { background: #0a0a18; }
+
+.book-card--hbp { border-color: #88aaee; }
+.book-card--hbp .book-cover { background: #050518; }
+
+.book-card--hallows { border-color: var(--accent); }
+.book-card--hallows .book-cover { background: #0a0a0a; }
+
 .book-cover {
   background: #0a0a12;
   padding: 1.5rem;
